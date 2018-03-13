@@ -117,7 +117,7 @@
             2 days ago
         </div>
     </div>
-    <div class="col-xs-12" style="height:50px;"></div>
+
     <!-- Content Row -->
     <div class="card-group">
         <div class="card bg-dark" style="color: white;">
@@ -143,7 +143,7 @@
         </div>
     </div>
     <!-- /.row -->
-    <div class="col-xs-12" style="height:50px;"></div>
+
 </div>
 </body>
 <!-- Footer -->
