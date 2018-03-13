@@ -1,52 +1,10 @@
-<html>
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Custom styles for this template -->
-<link href="css/small-business.css" rel="stylesheet">
-</html>
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-    <link rel="apple-touch-icon" sizes="57x57" href="/favicon.ico">-->
-    <title>Contact Us</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/small-business.css" rel="stylesheet">
-    <style>
-        .center {
-            margin: auto;
-            width: 60%;
-            text-align: center;
-            padding: 10px;
-        }
-        .jumbotron {
-            background: #358CCE;
-            color: #FFF;
-            border-radius: 0px;
-        }
-        .jumbotron-sm { padding-top: 24px;
-            padding-bottom: 24px; }
-        .jumbotron small {
-            color: #FFF;
-        }
-        .h1 small {
-            font-size: 24px;
-        }
-    </style>
+<header>
     <?php
-    include_once ("nav2.php");
+    include ("global_header.php");
     ?>
-</head>
+</header>
 <body>
 <div class="jumbotron jumbotron-sm">
     <div class="container">
