@@ -12,7 +12,7 @@
 </head>
 <body style="background-color: #1b1e21">
 <ol class="breadcrumb" style="background-color: #343a40;" >
-    <li class="breadcrumb-item"><a href=index.php style="font-size: 20px">Home</a></li>
+    <li class="breadcrumb-item"><a href=index.php style="font-size: 20px; color: white; text-decoration: none">Home</a></li>
     <li class="breadcrumb-item active" style="font-size:20px">Sign Up</li>
 </ol>
 <div class = "container-fluid" style="background-color: #1b1e21">
