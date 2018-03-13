@@ -42,7 +42,7 @@
     <div class="row my-4">
         <div class="center" >
             <img src="logos/Aqua%20Logo%20Long.png" class="img-fluid" style= "display: inline-block; padding-right:10px"width="300" height="80">
-            <p>Glacier Ice clothing, only ice cold quality</p>
+            <p style="color: white">Glacier Ice clothing, only ice cold quality</p>
             <form class="example" action="#" style="text-align: center">
                 <input type="text" placeholder="Search.." name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
