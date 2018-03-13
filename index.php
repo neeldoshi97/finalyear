@@ -14,7 +14,7 @@
     <meta name="author" content="">
     <!--<link rel="shortcut icon" href="logos/favicon.ico" type="image/x-icon"/>-->
     <link rel="apple-touch-icon" sizes="57x57" href="/logos/favicon.ico">
-    <title>Neel Store</title>
+    <title>AQUA Clothing</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
