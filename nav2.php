@@ -11,7 +11,7 @@ include ("functions/functions.php");
     <meta name="description" content="">
     <meta name="author" content="">
     <!--<link rel="shortcut icon" href="logos/favicon.ico" type="image/x-icon"/>-->
-    <link rel="apple-touch-icon" sizes="57x57" href="/logos/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon.ico">
     <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
     <style>
         /* Fixed navbar */
@@ -67,7 +67,7 @@ include ("functions/functions.php");
                     <a class="nav-link" href="#">Shopping Cart</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.php">Contact</a>
                 </li>
 
                 <?php

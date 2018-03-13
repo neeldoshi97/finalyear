@@ -4,10 +4,9 @@
 include("includes/db2.php");
 
 ?>
-<html>
+<html class="bg-dark">
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel = "stylesheet" href = "styles/style.css" media="all" />
     <title>Inserting Product</title>
     <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
     <script>
@@ -16,12 +15,12 @@ include("includes/db2.php");
 
 </head>
 
-<body>
+<body class="bg-dark">
 
 
-<form action="insert_product.php" method="post" enctype="multipart/form-data">
+<form class="form-container" action="insert_product.php" method="post" enctype="multipart/form-data">
 
-    <table align="center" width="795" bgcolor= #19c589 >
+    <table align="center" width="795" class="table-responsive-md bg-dark" style="color: white" >
 
         <tr align="center">
             <td colspan="7"><h2>Insert Product</h2></td>

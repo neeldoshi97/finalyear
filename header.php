@@ -11,7 +11,7 @@ include ("functions/functions.php");
     <meta name="description" content="">
     <meta name="author" content="">
     <!--<link rel="shortcut icon" href="logos/favicon.ico" type="image/x-icon"/>-->
-    <link rel="apple-touch-icon" sizes="57x57" href="/logos/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon.ico">
     <title>My Store</title>
 
     <!-- Bootstrap core CSS -->
@@ -119,4 +119,3 @@ include ("functions/functions.php");
 
 </body>
 </html>
-

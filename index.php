@@ -12,9 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!--<link rel="shortcut icon" href="logos/favicon.ico" type="image/x-icon"/>-->
-    <link rel="apple-touch-icon" sizes="57x57" href="/logos/favicon.ico">
-    <title>AQUA Clothing</title>
+    <!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon.ico">-->
+    <title>AQUA Clothing</title>-->
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
