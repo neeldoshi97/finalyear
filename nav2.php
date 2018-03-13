@@ -18,7 +18,6 @@ include ("functions/functions.php");
         /* General sizing */
         ul.dropdown-lr {
             width: 300px;
-            background-color: #1b1e21;
         }
 
     </style>
@@ -58,7 +57,7 @@ include ("functions/functions.php");
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCat" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Categories
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="color: white">
                         <?php getCats(); ?>
                     </ul>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownCat">
@@ -90,11 +89,11 @@ include ("functions/functions.php");
                 }else{
                     echo '
                      <a class="nav-link active" href="signup.php">Sign Up</a>
-                       <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" style="font-family: inherit" data-toggle="dropdown">Log In <span class="caret"></span></a>
-                    <ul class="dropdown-menu dropdown-lr animated slideInRight" role="menu">
-                        <div class="col-lg-12">
-                            <form style="padding-top: 10px;margin: auto" action="includes/login.inc.php" class="form-inline" method="POST">
+                       <li class="nav-item dropdown bg-dark">
+                    <a href="#" class="nav-link dropdown-toggle active bg-dark" style="font-family: inherit" data-toggle="dropdown">Log In <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-lr animated slideInRight bg-dark" role="menu">
+                        <div class="col-lg-12 bg-dark">
+                            <form style="padding-top: 10px;margin: auto" action="includes/login.inc.php" class="form-inline bg-dark" method="POST">
                                 <div class="form-group">
                                     <input type="text" name="uid"  class="form-control mb-2 mr-sm-2"  placeholder="Username/e-mail">
                                 </div>
