@@ -1,0 +1,5 @@
+/*login*/
+*{color: white}
+.form-container{border: 0px solid #ffffff; padding: 40px 40px; margin-top: 10vh;-webkit-box-shadow: 0px 5px 22px 14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 22px 14px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 22px 14px rgba(0,0,0,0.75);}
