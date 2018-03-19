@@ -2,9 +2,25 @@
 <?php
 include ("global_header.php");
 ?>
+<!--<style>
+    .parallax {
+        /* The image used */
+        background-image: url("images/bg3.jpg");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>-->
+</head>
 <body style="background-color: #1b1e21">
 <!-- Page Content -->
-<div class="container" style="background-color: #1b1e21">
+<div class="container">
 
     <!-- Heading Row -->
     <div class="row my-4">
@@ -57,32 +73,17 @@ include ("global_header.php");
         <!-- /.col-lg-8 -->
         <!-- /.col-md-4 -->
     </div>
-    <!-- /.row -->
-
     <!-- Call to Action Well -->
     <!-- http://www.jquery2dotnet.com -->
-    <div class="container">
-        <div class="row">
-            <div class="alert alert-info">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
-                    ×</button>
-                <span class="glyphicon glyphicon-info-sign"></span> <strong>Info!</strong>
-                <hr class="message-inner-separator">
-                <p>Limited time only! Students get an extra 10% off all products! See below for more info!</p>
-            </div>
-        </div>
-    </div>
-    <div class="card text-center bg-dark"style="color: white;">
+    <div class="card text-center bg-dark"style="color: gray;">
         <div class="card-header">
             Featured
         </div>
-        <div class="card-body">
-            <h5 class="card-title">Special Adidas Sale</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <div class="card-body" style="background: ">
+            <h5 class="card-title" style="color: white">Special Adidas Sale</h5>
+            <img class="card-img-top img-fluid" <img src='admin_area/product_images/adidasshoesoutlet.co.uk.jpg' width="1000" height="340"/>
+            <div class="col-xs-12" style="height:30px;"></div>
             <a href="#" class="btn btn-info">Shop Adidas</a>
-        </div>
-        <div class="card-footer text-muted">
-            2 days ago
         </div>
     </div>
     <div class="col-xs-12" style="height:50px;"></div>
@@ -91,6 +92,7 @@ include ("global_header.php");
         <div class="card bg-dark" style="color: white;">
             <div class="card-body">
                 <h5 class="card-title">Students</h5>
+                <img class=\"card-img-top\" <img src='admin_area/product_images/image-placeholder-500x500.jpg' width="300" height="200"/>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
             <a href="#" class="btn btn-info btn-md">More Info</a>
@@ -98,6 +100,7 @@ include ("global_header.php");
         <div class="card bg-dark" style="color: white;">
             <div class="card-body">
                 <h5 class="card-title">Newest Products</h5>
+                <img class=\"card-img-top\" <img src='admin_area/product_images/image-placeholder-500x500.jpg' width="300" height="200"/>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
             <a href="#" class="btn btn-info btn-md">Discover</a>
@@ -105,10 +108,17 @@ include ("global_header.php");
         <div class="card bg-dark" style="color: white;">
             <div class="card-body">
                 <h5 class="card-title">Clearance</h5>
+                <img class=\"card-img-top\" <img src='admin_area/product_images/image-placeholder-500x500.jpg' width="300" height="200"/>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
             <a href="#" class="btn btn-info btn-md">Go to sale</a>
         </div>
+    </div>
+    <div class="card bg-dark text-white">
+        <img class="card-img" src="images/adidasad2.jpg" alt="Card image">
+        <div class="card-img-overlay" style="color: #16181b">
+            <h5 class="card-title">ADIDAS</h5>
+             </div>
     </div>
     <!-- /.row -->
     <div class="col-xs-12" style="height:50px;"></div>

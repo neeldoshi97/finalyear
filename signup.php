@@ -11,10 +11,22 @@
     <script src="/https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body style="background-color: #1b1e21">
-<ol class="breadcrumb" style="background-color: #343a40;" >
+<!--<ol class="breadcrumb" style="background-color: #343a40;" >
     <li class="breadcrumb-item"><a href=index.php style="font-size: 20px; color: white; text-decoration: none">Home</a></li>
     <li class="breadcrumb-item active" style="font-size:20px">Sign Up</li>
-</ol>
+</ol>-->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb" style="background-color: #343a40">
+                    <li class="breadcrumb-item"><a href=index.php style="font-size: 20px; color: white; text-decoration: none">Home</a></li>
+                    <li class="breadcrumb-item active" style="font-size:20px">Sign Up</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
 <div class = "container-fluid" style="background-color: #1b1e21">
     <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-12"></div>

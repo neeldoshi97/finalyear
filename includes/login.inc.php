@@ -10,6 +10,7 @@ if(isset($_POST['submit'])){
     $uid = mysqli_real_escape_string($conn,  $_POST['uid']);
     $pwd = mysqli_real_escape_string($conn,  $_POST['pwd']);
 
+
     //error handlers
     //check empty input
     if(empty($uid) || empty($pwd)) {

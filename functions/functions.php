@@ -23,12 +23,9 @@ while ($row_cats = mysqli_fetch_array($run_cats)){
     $cat_title = $row_cats['cat_title'];
 
 //echo "<li><a href = '#'>$cat_title</a></li>";
-    echo "<li><a class=\"dropdown-item\" href='#'>$cat_title</a></li>";
+    echo "<li><a class=\"dropdown-item\" href='#'>$cat_title</a></li>
+            <li class=\"divider\"></li>";
 }
-
-
-
-
 
 }
 //getting the brands
@@ -45,7 +42,10 @@ function getBrands(){
         $brand_title = $row_brands['brand_title'];
 
         /*echo "<li><a href = '#'>$brand_title</a></li>";*/
-        echo "<li><a class=\"dropdown-item\" href='#'>$brand_title</a></li>";
+        echo "
+        <li><a class=\"dropdown-item\" href='#'>$brand_title</a></li>
+    <li class=\"divider\"></li>   
+        ";
 
 
     }
@@ -69,17 +69,35 @@ function getpro(){
         $pro_image = $row_pro['product_image'];
 
         echo"
-        <div id = 'single_product'>
-        
-            <h4>$pro_title</h4>
-            <img src='admin_area/product_images/$pro_image' width='140' height='140'/>
-            <p><b> £ $pro_price</b></p>
-            
-            <a href='details.php?pro_id=$pro_id' style='float: left'>Details</a>
-            <a href='index.php?pro_id=$pro_id'><button style='float:right'>Add to Cart</button></a>    
-        
-        </div>
-        
+ <!-- <div class='col container-fluid'>
+        <div class=\"card w-75\" style=\"width: 18rem; float: left\">
+  <img class=\"card-img-top\" <img src='admin_area/product_images/$pro_image'/>
+  <div class=\"card-body\">
+    <h7 class=\"card-title\">$pro_title</h7>
+    <p class=\"card-text\">£ $pro_price</p>
+    <a href=\"#\" class=\"btn btn-primary\">Details</a>
+        <a href='index.php?pro_id=$pro_id' class=\"btn btn-primary\">Add to Cart</a>
+   
+  </div>
+</div>
+</div>-->
+<div class=\"col-12 col-md-6 col-lg-4\">
+                    <div class=\"card\ bg-dark\">
+                        <img class=\"card-img-top\" <img src='admin_area/product_images/$pro_image' alt=\"Card image cap\">
+                        <div class=\"card-body\">
+                            <h4 class=\"card-title\"><a href=\"product.html\" title=\"View Product\" style='color: white'>$pro_title</a></h4>
+                            <div class=\"row\">
+                                <div class=\"col\">
+                                    <p class=\"btn btn-danger btn-block\">£ $pro_price</p>
+                                </div>
+                                <div class=\"col\">
+                                    <a href='index.php?pro_id=$pro_id' class=\"btn btn-success btn-block\">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       
         ";
 
     }

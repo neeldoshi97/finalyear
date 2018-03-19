@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
+<head>
     <?php
     include ("global_header.php");
     ?>
-</header>
-<body>
+   <!-- <ol class="breadcrumb" style="background-color: #1b1e21; padding-top: 20px" >
+        <li class="breadcrumb-item"><a href=index.php style="font-size: 20px; color: white; text-decoration: none">Home</a></li>
+        <li class="breadcrumb-item active" style="font-size:20px">Contact</li>
+    </ol>-->
+</head>
+<style>
+    .jumbotron {
+        color: #FFF;
+        border-radius: 0px;
+    }
+    .jumbotron-sm { padding-top: 24px;
+        padding-bottom: 24px; }
+    .jumbotron small {
+        color: #FFF;
+    }
+    .h1 small {
+        font-size: 24px;
+    }
+</style>
+<body style="background-color: #1b1e21">
+<div class="col-xs-12" style="height:30px;"></div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb" style="background-color: #343a40">
+                    <li class="breadcrumb-item"><a href=index.php style="font-size: 20px; color: white; text-decoration: none">Home</a></li>
+                    <li class="breadcrumb-item active" style="font-size:20px">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
 <div class="jumbotron jumbotron-sm">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-lg-12">
-                <h1 class="h1">
-                    Contact us <small>Feel free to contact us</small></h1>
+                <h1 class="h1" style="color: #16181b">
+                    Contact us <small style="color: #16181b">Feel free to contact us</small></h1>
             </div>
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container" style="color: white">
     <div class="row">
         <div class="col-md-8">
             <div class="well well-sm">
@@ -56,7 +87,7 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            <button type="submit" class="btn btn-info pull-right" id="btnContactUs">
                                 Send Message</button>
                         </div>
                     </div>

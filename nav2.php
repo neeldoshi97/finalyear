@@ -36,11 +36,19 @@ include ("functions/functions.php");
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" </a>
+       <!-- <a class="navbar-brand" </a>-->
         <a href="index.php"><img src="logos/Aqua%20Logo%20Icon.png" style= "display: inline-block;float: right "width="50" height="50"></a>
-        </a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
+                <li><a class="nav-link" style="float: left;"><?php
+                        if (isset($_SESSION['u_id'])){
+                            echo "<a style='color: aqua; float: left; padding-top: 3px; font-size: larger'>", $_SESSION['u_firstname'];
+                        }
+                        ?>
+                    </a></li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="product-page.php">All Products</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBrands" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Brands
@@ -62,8 +70,14 @@ include ("functions/functions.php");
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownCat">
                         <!--?php getCats(); ?>-->
                 </li>
-                <li class="nav-item">
+                <!--<li class="nav-item">
                     <a class="nav-link" href="#">Shopping Cart</a>
+                </li>-->
+                <li style="padding-top: 6px;">
+                    <a class="btn btn-info btn-sm ml-3" href="#">
+                        <i class="fa fa-shopping-cart"></i> Cart
+                        <span class="badge badge-light">0</span>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contact</a>
@@ -75,14 +89,16 @@ include ("functions/functions.php");
                     <a class="nav-link" href="#">My Account
                         <span class="sr-only">(current)</span>
                     </a>
-                </li>';
+                </li>
+                ';
+                  //echo "<h6 style='color: white; float: left'> Welcome ", $_SESSION['u_firstname'];
                 }
                 ?>
                 <?php
                 if (isset($_SESSION['u_id'])){
                     echo '
                         <form class="form-inline" style="margin: auto" action="includes/logout.inc.php" method="POST">
-                        <button type="submit" style="color: aqua; font-size: large; text-decoration: none" class="btn btn-link btn-md" name="submit"><b>Logout</b></button>
+                        <button type="submit" style="color: white; font-size: large; text-decoration: none" class="btn btn-link btn-md" name="submit"><b>Logout</b></button>
                         </form>
                         ';
                 }else{
@@ -167,4 +183,3 @@ include ("functions/functions.php");
 
 </body>
 </html>
-
