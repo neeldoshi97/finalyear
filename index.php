@@ -2,23 +2,41 @@
 <?php
 include ("global_header.php");
 ?>
-<!--<style>
-    .parallax {
-        /* The image used */
-        background-image: url("images/bg3.jpg");
+<style>
+    .cardopacity{
+    opacity: 0.8;
+    }
+    }
+    body, html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: #777;
+    }
 
-        /* Set a specific height */
-        min-height: 500px;
-
-        /* Create the parallax scrolling effect */
+    .bgimg-3 {
+        position: relative;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
     }
-</style>-->
-</head>
-<body style="background-color: #1b1e21">
+    .bgimg-3 {
+        background-image: url("images/hoodie.jpg");
+        min-height: 400px;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+        }
+
+
+
+</style>
+<body class="bgimg-3">
 <!-- Page Content -->
 <div class="container">
 
@@ -27,9 +45,9 @@ include ("global_header.php");
         <div class="center" >
             <img src="logos/Aqua%20Logo%20Long.png" class="img-fluid" style= "display: inline-block; padding-right:10px"width="300" height="80">
             <p style="color: white">Glacier Ice clothing, only ice cold quality</p>
-            <form class="example" action="#" style="text-align: center">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
+            <form class="example" action="results.php" style="text-align: center">
+                <input type="text" placeholder="Search.." name="user_query">
+                <button type="submit" style="opacity: 0.8"  name="search" value="Search"><i class="fa fa-search"></i></button>
             </form>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -75,50 +93,33 @@ include ("global_header.php");
     </div>
     <!-- Call to Action Well -->
     <!-- http://www.jquery2dotnet.com -->
-    <div class="card text-center bg-dark"style="color: gray;">
-        <div class="card-header">
-            Featured
-        </div>
-        <div class="card-body" style="background: ">
-            <h5 class="card-title" style="color: white">Special Adidas Sale</h5>
-            <img class="card-img-top img-fluid" <img src='admin_area/product_images/adidasshoesoutlet.co.uk.jpg' width="1000" height="340"/>
-            <div class="col-xs-12" style="height:30px;"></div>
-            <a href="#" class="btn btn-info">Shop Adidas</a>
-        </div>
-    </div>
-    <div class="col-xs-12" style="height:50px;"></div>
+    <div class="col-xs-12 parallax" style="height:50px;"></div>
     <!-- Content Row -->
-    <div class="card-group">
+    <div class="card-group cardopacity">
         <div class="card bg-dark" style="color: white;">
             <div class="card-body">
                 <h5 class="card-title">Students</h5>
                 <img class=\"card-img-top\" <img src='admin_area/product_images/image-placeholder-500x500.jpg' width="300" height="200"/>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Are you a student? You are entitled to a 10% discount as well as free delivery with orders over £30! Enter the code below at checkout and connect using UniDays and enjoy!</p>
             </div>
-            <a href="#" class="btn btn-info btn-md">More Info</a>
+            <a class="card-footer" style="color: gray">Use code at checkout: STUDENT10</a>
         </div>
         <div class="card bg-dark" style="color: white;">
             <div class="card-body">
                 <h5 class="card-title">Newest Products</h5>
                 <img class=\"card-img-top\" <img src='admin_area/product_images/image-placeholder-500x500.jpg' width="300" height="200"/>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">New products by your favourite brands!</p>
             </div>
-            <a href="#" class="btn btn-info btn-md">Discover</a>
+            <a href="product-page.php" class="btn btn-info btn-md">Discover</a>
         </div>
         <div class="card bg-dark" style="color: white;">
             <div class="card-body">
-                <h5 class="card-title">Clearance</h5>
+                <h5 class="card-title">Summer Season</h5>
                 <img class=\"card-img-top\" <img src='admin_area/product_images/image-placeholder-500x500.jpg' width="300" height="200"/>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">Check out the latest summer selection using the link below</p>
             </div>
-            <a href="#" class="btn btn-info btn-md">Go to sale</a>
+            <a href="#" class="btn btn-info btn-md">Go to summer clothing</a>
         </div>
-    </div>
-    <div class="card bg-dark text-white">
-        <img class="card-img" src="images/adidasad2.jpg" alt="Card image">
-        <div class="card-img-overlay" style="color: #16181b">
-            <h5 class="card-title">ADIDAS</h5>
-             </div>
     </div>
     <!-- /.row -->
     <div class="col-xs-12" style="height:50px;"></div>

@@ -8,12 +8,6 @@ include_once ("global_header.php");
 ** Style Simple Ecommerce Theme for Bootstrap 4
 ** Created by T-PHP https://t-php.fr/43-theme-ecommerce-bootstrap-4.html
 */
-        .bloc_left_price {
-            color: #c01508;
-            text-align: center;
-            font-weight: bold;
-            font-size: 150%;
-        }
         .category_block li:hover {
             background-color: #007bff;
         }
@@ -36,13 +30,6 @@ include_once ("global_header.php");
             text-decoration: line-through;
             font-size: 140%;
         }
-        .product_rassurance {
-            padding: 10px;
-            margin-top: 15px;
-            background: #ffffff;
-            border: 1px solid #6c757d;
-            color: #6c757d;
-        }
         .product_rassurance .list-inline {
             margin-bottom: 0;
             text-transform: uppercase;
@@ -57,17 +44,47 @@ include_once ("global_header.php");
         .pagination {
             margin-top: 20px;
         }
-    </style>
-</head>
-<!--<body style="background-color: #16181b">
-<div class="row">
-    <div class="row card-group" style="padding-top: 30px;margin-left: 20px"><?php //getpro();?> </div>
-</div>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
 
-</body>-->
-<body style="background-color: #1b1e21">
+        .bgimg-3 {
+            position: relative;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .bgimg-3 {
+            background-image: url("images/hoodie3.jpg");
+            min-height: 400px;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1, .bgimg-2, .bgimg-3 {
+                background-attachment: scroll;
+            }
+
+    </style>
+    <div class="row my-4">
+        <div class="center" >
+            <img src="logos/Aqua%20Logo%20Long.png" class="img-fluid" style= "display: inline-block; padding-right:10px"width="300" height="80">
+            <p style="color: white">Glacier Ice clothing, only ice cold quality</p>
+            <form class="example" action="results.php" style="text-align: center">
+                <input type="text" placeholder="Search.." name="user_query">
+                <button type="submit" style="opacity: 0.8"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+</head>
+<body class="bgimg-3">
 <div class="col-xs-12" style="height:30px;"></div>
-<div class="container">
+<div class="container" style="opacity: 0.6">
     <div class="row">
         <div class="col">
             <nav aria-label="breadcrumb">
@@ -79,30 +96,23 @@ include_once ("global_header.php");
         </div>
     </div>
 </div>
-<section class="jumbotron text-center">
-    <div class="container">
-        <h1 class="jumbotron-heading">All Products</h1>
-        <p class="lead text-muted mb-0">Look stylish this summer and stay cool with our ice cold clothing brands keeping you 100% glacier!</p>
-    </div>
-</section>
 <div class="container">
     <div class="row">
         <div class="col-12 col-sm-3">
-            <div class="card bg-light mb-3 bg-dark">
+            <div class="card bg-light mb-3 bg-dark" style="opacity: 0.6">
                 <div class="card-header bg-primary text-white text-uppercase bg-dark"><i class="fa fa-list bg-dark"></i> Categories</div>
-                <ul class="list-group category_block bg-dark">
-                    <li class="list-group-item" style="background-color: #1b1e21;" ><a href="category.html" style="color: white">Cras justo odio</a></li>
-                    <li class="list-group-item" style="background-color: #1b1e21;"><a style="color: white" href="category.html">Dapibus ac facilisis in</a></li>
-                    <li class="list-group-item" style="background-color: #1b1e21;"><a style="color: white" href="category.html">Morbi leo risus</a></li>
-                    <li class="list-group-item" style="background-color: #1b1e21;"><a style="color: white" href="category.html">Porta ac consectetur ac</a></li>
-                    <li class="list-group-item" style="background-color: #1b1e21;"><a style="color: white" href="category.html">Vestibulum at eros</a></li>
-                </ul>
+                <?php
+                getCats2();
+                ?>
             </div>
         </div>
         <div class="col">
             <div class="row">
 
-                <?php getpro();?>
+                <?php getPro();?>
+                <?php getCatPro(); ?>
+                <?php getBrandPro(); ?>
+                <?php getSearchPro()?>
 
             </div>
         </div>

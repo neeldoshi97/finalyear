@@ -9,6 +9,9 @@
     <script src="/http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="/https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+
+    </style>
 </head>
 <body style="background-color: #1b1e21">
 <!--<ol class="breadcrumb" style="background-color: #343a40;" >

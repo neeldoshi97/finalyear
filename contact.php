@@ -10,24 +10,50 @@
     </ol>-->
 </head>
 <style>
-    .jumbotron {
-        color: #FFF;
+    body, html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: #777;
+    }
+
+    .bgimg-3 {
+        position: relative;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .bgimg-3 {
+        background-image: url("images/aj.jpg");
+        min-height: 400px;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+        }
+
+        .jumbotron {
+        color: white;
         border-radius: 0px;
     }
     .jumbotron-sm { padding-top: 24px;
         padding-bottom: 24px; }
     .jumbotron small {
-        color: #FFF;
+        color: white;
     }
     .h1 small {
         font-size: 24px;
     }
 </style>
-<body style="background-color: #1b1e21">
+<body class="bgimg-3">
 <div class="col-xs-12" style="height:30px;"></div>
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col" style="opacity: 0.8">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb" style="background-color: #343a40">
                     <li class="breadcrumb-item"><a href=index.php style="font-size: 20px; color: white; text-decoration: none">Home</a></li>
@@ -37,17 +63,17 @@
         </div>
     </div>
 </div>
-<div class="jumbotron jumbotron-sm">
+<div class="jumbotron jumbotron-sm" style="opacity: 0.8; background-color: #1b1e21; color: white">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-lg-12">
-                <h1 class="h1" style="color: #16181b">
-                    Contact us <small style="color: #16181b">Feel free to contact us</small></h1>
+                <h1 class="h1" style="color: white">
+                    Contact us</h1>
             </div>
         </div>
     </div>
 </div>
-<div class="container" style="color: white">
+<div class="container" style="color: white; background-color: #1b1e21; opacity: 0.7">
     <div class="row">
         <div class="col-md-8">
             <div class="well well-sm">
@@ -114,3 +140,7 @@
     </div>
 </div>
 </body>
+<div class="col-xs-12" style="height:50px;"></div>
+<?php
+include_once ("footer.php");
+?>

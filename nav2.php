@@ -73,22 +73,32 @@ include ("functions/functions.php");
                 <!--<li class="nav-item">
                     <a class="nav-link" href="#">Shopping Cart</a>
                 </li>-->
-                <li style="padding-top: 6px;">
-                    <a class="btn btn-info btn-sm ml-3" href="#">
-                        <i class="fa fa-shopping-cart"></i> Cart
-                        <span class="badge badge-light">0</span>
-                    </a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contact</a>
+                </li>
+                <li style="padding-top: 6px;">
+                    <a class="btn btn-info btn-sm ml-3" href="shopping_cart.php">
+                        <i class="fa fa-shopping-cart"></i> Cart
+                        <span class="badge badge-light">2</span>
+                    </a>
                 </li>
 
                 <?php
                 if (isset($_SESSION['u_id'])){
-                    echo '<li class="nav-item active">
-                    <a class="nav-link" href="#">My Account
-                        <span class="sr-only">(current)</span>
+                    echo '
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownBrands" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       My Account
                     </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="my_account.php?my_orders">My Orders</a></li>
+                        <li><a class="dropdown-item" href="my_account.php?edit_account">Manage Account</a></li>
+                        <li><a class="dropdown-item" href="my_account.php?change_pass">Change Password</a></li>
+                        <li><a class="dropdown-item" href="my_account.php?delete_account">Delete Account</a></li>
+                        
+            <li class=\"divider\"></li>
+                    </ul>
+                    
                 </li>
                 ';
                   //echo "<h6 style='color: white; float: left'> Welcome ", $_SESSION['u_firstname'];
@@ -106,7 +116,7 @@ include ("functions/functions.php");
                      <a class="nav-link active" href="signup.php">Sign Up</a>
                        <li class="nav-item dropdown bg-dark">
                     <a href="#" class="nav-link dropdown-toggle active bg-dark" style="font-family: inherit" data-toggle="dropdown">Log In <span class="caret"></span></a>
-                    <ul class="dropdown-menu dropdown-lr animated slideInRight bg-dark" role="menu">
+                    <ul class="dropdown-menu dropdown-lr animated slideInRight bg-dark" role="menu" style="opacity: 0.8">
                         <div class="col-lg-12 bg-dark">
                             <form style="padding-top: 10px;margin: auto" action="includes/login.inc.php" class="form-inline bg-dark" method="POST">
                                 <div class="form-group">
@@ -161,20 +171,9 @@ include ("functions/functions.php");
 
             }
             */?>
+
         </div>
 
-
-
-
-        <!--<form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-                <input type="text" class="form-control" name="username" placeholder="Username">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" name="password" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-default">Sign In</button>
-        </form>-->
     </div>
 </nav>
 <!-- Bootstrap core JavaScript -->

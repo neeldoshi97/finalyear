@@ -20,7 +20,6 @@ include ("functions/functions.php");
 
     <!-- Custom styles for this template -->
     <link href="css/small-business.css" rel="stylesheet">
-
 </head>
 <body>
 <!-- Navigation -->
@@ -29,7 +28,7 @@ include ("functions/functions.php");
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" </a>
+        <a class="navbar-brand" ></a>
         <a href="index.php"><img src="logos/Aqua%20Logo%20Icon.png" style= "display: inline-block;float: right "width="50" height="50"></a>
         </a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -60,7 +59,7 @@ include ("functions/functions.php");
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
-                </li>
+               </li>
 
                 <?php
                 if (isset($_SESSION['u_id'])){
