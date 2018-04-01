@@ -27,11 +27,11 @@ include ("global_header.php");
         min-height: 400px;
     }
 
-    /* Turn off parallax scrolling for tablets and phones */
+    /* Turn off parallax scrolling for tablets and phones
     @media only screen and (max-device-width: 1024px) {
         .bgimg-1, .bgimg-2, .bgimg-3 {
             background-attachment: scroll;
-        }
+        }*/
 
 
 
@@ -99,7 +99,7 @@ include ("global_header.php");
         <div class="card bg-dark" style="color: white;">
             <div class="card-body">
                 <h5 class="card-title">Students</h5>
-                <img class=\"card-img-top\" <img src='admin_area/product_images/image-placeholder-500x500.jpg' width="300" height="200"/>
+                <img class="img-fluid card-img-top" <img src='admin_area/product_images/image-placeholder-500x500.jpg' width="300" height="200"/>
                 <p class="card-text">Are you a student? You are entitled to a 10% discount as well as free delivery with orders over £30! Enter the code below at checkout and connect using UniDays and enjoy!</p>
             </div>
             <a class="card-footer" style="color: gray">Use code at checkout: STUDENT10</a>
@@ -107,7 +107,7 @@ include ("global_header.php");
         <div class="card bg-dark" style="color: white;">
             <div class="card-body">
                 <h5 class="card-title">Newest Products</h5>
-                <img class=\"card-img-top\" <img src='admin_area/product_images/image-placeholder-500x500.jpg' width="300" height="200"/>
+                <img class="img-fluid card-img-top" <img src='admin_area/product_images/image-placeholder-500x500.jpg' width="300" height="200"/>
                 <p class="card-text">New products by your favourite brands!</p>
             </div>
             <a href="product-page.php" class="btn btn-info btn-md">Discover</a>
@@ -115,7 +115,7 @@ include ("global_header.php");
         <div class="card bg-dark" style="color: white;">
             <div class="card-body">
                 <h5 class="card-title">Summer Season</h5>
-                <img class=\"card-img-top\" <img src='admin_area/product_images/image-placeholder-500x500.jpg' width="300" height="200"/>
+                <img class="img-fluid card-img-top" <img src='admin_area/product_images/image-placeholder-500x500.jpg' width="300" height="200"/>
                 <p class="card-text">Check out the latest summer selection using the link below</p>
             </div>
             <a href="#" class="btn btn-info btn-md">Go to summer clothing</a>

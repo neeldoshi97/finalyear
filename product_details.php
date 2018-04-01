@@ -23,11 +23,11 @@
             min-height: 400px;
         }
 
-        /* Turn off parallax scrolling for tablets and phones */
+        /* Turn off parallax scrolling for tablets and phones
         @media only screen and (max-device-width: 1024px) {
             .bgimg-1, .bgimg-2, .bgimg-3 {
                 background-attachment: scroll;
-            }
+            }*/
 
         /*****************globals*************/
         body {

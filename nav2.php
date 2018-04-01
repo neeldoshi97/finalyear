@@ -42,7 +42,7 @@ include ("functions/functions.php");
             <ul class="navbar-nav ml-auto">
                 <li><a class="nav-link" style="float: left;"><?php
                         if (isset($_SESSION['u_id'])){
-                            echo "<a style='color: aqua; float: left; padding-top: 3px; font-size: larger'>", $_SESSION['u_firstname'];
+                            echo "<a class='nav-link' style='color: aqua; float: left; padding-top: 5px; font-size: larger'>", $_SESSION['u_firstname'];
                         }
                         ?>
                     </a></li>
@@ -79,7 +79,7 @@ include ("functions/functions.php");
                 <li style="padding-top: 6px;">
                     <a class="btn btn-info btn-sm ml-3" href="shopping_cart.php">
                         <i class="fa fa-shopping-cart"></i> Cart
-                        <span class="badge badge-light">2</span>
+                        <span class="badge badge-light"><?php total_items()?></span>
                     </a>
                 </li>
 
@@ -93,8 +93,6 @@ include ("functions/functions.php");
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="my_account.php?my_orders">My Orders</a></li>
                         <li><a class="dropdown-item" href="my_account.php?edit_account">Manage Account</a></li>
-                        <li><a class="dropdown-item" href="my_account.php?change_pass">Change Password</a></li>
-                        <li><a class="dropdown-item" href="my_account.php?delete_account">Delete Account</a></li>
                         
             <li class=\"divider\"></li>
                     </ul>

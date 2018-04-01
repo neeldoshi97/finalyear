@@ -30,11 +30,11 @@
         min-height: 400px;
     }
 
-    /* Turn off parallax scrolling for tablets and phones */
+    /* Turn off parallax scrolling for tablets and phones
     @media only screen and (max-device-width: 1024px) {
         .bgimg-1, .bgimg-2, .bgimg-3 {
             background-attachment: scroll;
-        }
+        }*/
 
         .jumbotron {
         color: white;
@@ -63,7 +63,7 @@
         </div>
     </div>
 </div>
-<div class="jumbotron jumbotron-sm" style="opacity: 0.8; background-color: #1b1e21; color: white">
+<div class="jumbotron jumbotron-sm" style="opacity: 0.7; background-color: #1b1e21; color: white">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-lg-12">

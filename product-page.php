@@ -64,11 +64,11 @@ include_once ("global_header.php");
             min-height: 400px;
         }
 
-        /* Turn off parallax scrolling for tablets and phones */
+        /* Turn off parallax scrolling for tablets and phones
         @media only screen and (max-device-width: 1024px) {
             .bgimg-1, .bgimg-2, .bgimg-3 {
                 background-attachment: scroll;
-            }
+            }*/
 
     </style>
     <div class="row my-4">
@@ -96,6 +96,7 @@ include_once ("global_header.php");
         </div>
     </div>
 </div>
+<?php cart(); ?>
 <div class="container">
     <div class="row">
         <div class="col-12 col-sm-3">

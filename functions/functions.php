@@ -118,7 +118,7 @@ function getSearchPro()
                                     <p style='color: white'>£ $pro_price</p>
                                 </div>
                                 <div class=\"col\">
-                                    <a class=\"btn btn-info btn-md ml-3\" href=\"#\">
+                                    <a class=\"btn btn-info btn-md ml-3\" href=\"/product-page.php?add_cart=$pro_id\">
                         <i class=\"fa fa-shopping-cart\"></i>
                         <span class=\"badge badge-light\">+</span></a>
                                 </div>
@@ -178,7 +178,7 @@ function getPro()
                                     <p style='color: white'>£ $pro_price</p>
                                 </div>
                                 <div class=\"col\">
-                                    <a class=\"btn btn-info btn-md ml-3\" href=\"#\">
+                                    <a class=\"btn btn-info btn-md ml-3\" href=\"product-page.php?add_cart=$pro_id\">
                         <i class=\"fa fa-shopping-cart\"></i>
                         <span class=\"badge badge-light\">+</span></a>
                                 </div>
@@ -234,7 +234,7 @@ function getCatPro(){
                                     <p style='color: white'>£ $pro_price</p>
                                 </div>
                                 <div class=\"col\">
-                                    <a class=\"btn btn-info btn-md ml-3\" href=\"#\">
+                                    <a class=\"btn btn-info btn-md ml-3\" href=\"product-page.php?add_cart=$pro_id\">
                         <i class=\"fa fa-shopping-cart\"></i>
                         <span class=\"badge badge-light\">+</span></a>
                                 </div>
@@ -290,7 +290,7 @@ function getBrandPro(){
                                     <p style='color: white'>£ $pro_price</p>
                                 </div>
                                 <div class=\"col\">
-                                    <a class=\"btn btn-info btn-md ml-3\" href=\"#\">
+                                    <a class=\"btn btn-info btn-md ml-3\" href=\"product-page.php?add_cart=$pro_id\">
                         <i class=\"fa fa-shopping-cart\"></i>
                         <span class=\"badge badge-light\">+</span></a>
                                 </div>
@@ -324,8 +324,6 @@ function getIp() {
     return $ip;
 }
 
-
-
 //creating the shopping cart
 function cart(){
 
@@ -352,7 +350,7 @@ function cart(){
 
             $run_pro = mysqli_query($con, $insert_pro);
 
-            echo "<script>window.open('index.php','_self')</script>";
+            echo "<script>window.open('product-page.php','_self')</script>";
         }
 
     }
@@ -428,8 +426,45 @@ function total_price(){
 
     }
 
-    echo "$" . $total;
+    echo "£" . $total;
 
 
 }
+
+function shoppingCart(){
+
+
+}
+
+function updateCart(){
+
+    global $con;
+
+    $ip = getIp();
+
+    if(isset($_POST['update_cart'])){
+
+        foreach($_POST['remove'] as $remove_id){
+
+            $delete_product = "delete from cart where p_id='$remove_id' AND ip_add='$ip'";
+
+            $run_delete = mysqli_query($con, $delete_product);
+
+            if($run_delete){
+
+                echo "<script>window.open('shopping_cart.php','_self')</script>";
+
+            }
+
+        }
+
+    }
+    if(isset($_POST['continue'])){
+
+        echo "<script>window.open('product-page.php','_self')</script>";
+
+    }
+
+}
 ?>
+
